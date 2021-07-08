@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
         txtClose = (TextView) dialog.findViewById(R.id.txtClose);
         txtUser = (TextView) dialog.findViewById(R.id.txtUser);
-
+        dialog.findViewById(R.id.edtuserName).setEnabled(true);
         txtUser.setText("Novo Usuário");
 
         txtClose.setOnClickListener(new View.OnClickListener() {

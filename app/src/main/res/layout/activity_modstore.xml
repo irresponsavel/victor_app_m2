@@ -61,8 +61,9 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
             android:clickable="false"
-            android:editable="false"
-            android:enabled="false"
+            android:editable="true"
+            android:enabled="true"
+            android:fadeScrollbars="false"
             android:hint="Endereço da loja" />
 
         <EditText
@@ -91,7 +92,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
             android:hint="CNPJ"
-            android:inputType="textPassword" />
+            android:inputType="text" />
 
         <Button
             android:id="@+id/btnSave"

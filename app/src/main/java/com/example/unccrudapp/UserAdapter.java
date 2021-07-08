@@ -174,6 +174,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
         edtPhone = (EditText) dialog.findViewById(R.id.edtPhone);
         edtPassword = (EditText) dialog.findViewById(R.id.edtPass);
 
+        //desabilitando o campo login
+        edtUserName.setEnabled(false);
         btnSave = (Button) dialog.findViewById(R.id.btnSave);
         String userId = null;
         try {

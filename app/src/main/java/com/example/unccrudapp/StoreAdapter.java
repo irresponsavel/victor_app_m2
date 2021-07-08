@@ -177,6 +177,9 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.MyViewHolder
         edtCidade = (EditText) dialog.findViewById(R.id.edtCidade);
         edtCnpj = (EditText) dialog.findViewById(R.id.edtCnpj);
 
+        //desabilitando o campo cnpj
+        edtCnpj.setEnabled(false);
+
         btnSave = (Button) dialog.findViewById(R.id.btnSave);
         String storeId = null;
         try {
