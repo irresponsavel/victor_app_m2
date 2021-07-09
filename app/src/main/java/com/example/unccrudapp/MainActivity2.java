@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    CardView cardUser, cardLoja;
+    CardView cardUser, cardLoja, cardProduto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         cardUser = findViewById(R.id.btn_usuarios);
         cardLoja = findViewById(R.id.btn_lojas);
+        cardProduto = findViewById(R.id.btn_items);
 
         cardUser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), StoreActivity.class);
+                startActivity(i);
+            }
+        });
+
+        cardProduto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ItemActivity.class);
                 startActivity(i);
             }
         });
